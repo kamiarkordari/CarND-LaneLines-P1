@@ -9,7 +9,7 @@ When we drive, we use our eyes to decide where to go.  The lines on the road tha
 
 In this project we detect lane lines on the road from images and videos taken by a camera on the car.
 
-We use Python and OpenCV. The file containing the project code is P1.ipynb, which is a Jupyter Notebook. This Notebook is exported as an HTML file to P1.html for easier viewing of the results.  
+The file containing the project code is P1.ipynb, which is a Jupyter Notebook. Python and OpenCV is used to implement the algorithms. This Notebook is exported as an HTML file to P1.html for easier viewing of the results.   
 
 The requirements of the project are detailed here: [project rubric](https://review.udacity.com/#!/rubrics/322/view)
 
@@ -21,13 +21,14 @@ In order to detect lane lines on an image or frame of a video stream, we apply t
 2. Apply Gaussian Blur smoothing to reduce noise for the edge detection step
 3. Apply Canny Edge Detection
 4. Apply region of interest to mask the lines out of this region
-4. Apply Hough transform to detect lines
-5. Draw lines by following these steps:
--- Separate lines into right and left based on being negative or positive
--- Filter out lines with unreasonable slope values by comparing to some thresholds
--- Calculate a weighted average of slopes
--- Fit a line to left and right points
-6. Overlay left and right lines onto the original image
+5. Apply Hough transform to detect lines
+6. Draw lines by following these steps:
+  * Separate lines into right and left based on being negative or positive
+  * Filter out lines with unreasonable slope values by comparing to some thresholds
+  * Calculate a weighted average of slopes
+  * Fit a line to left and right points
+
+7. Overlay left and right lines onto the original image
 
 
 Shortcomings
